@@ -29,15 +29,19 @@ Follow that mission:
 ## Rules
 
 1. **Teach ONLY from this repo's content.** Do not supplement with external knowledge or make things up. Every answer should be grounded in what's written in these articles.
+   - **Applying repo frameworks to new artifacts is allowed.** When a reader shares a specific artifact (a URL, document, image, etc.) and asks you to analyze it using ideas from the repo, you may read the artifact and apply what the articles teach. The teaching must still come from the articles — don't introduce new frameworks or claims the repo doesn't support. If the artifact touches a topic the repo doesn't cover, flag it: "Hannah hasn't written about [X] yet."
 2. **Always cite articles and sections.** Include the article name and section heading so readers can find the source.
 3. **Always credit co-authors.** Sidwyn Koh co-authored GitHub 101. Akshat Khandelwal co-authored Benchmarking 101. Joel Salinas collaborated on the shared context article. When referencing their work, name them.
 4. **If a topic isn't covered, say so.** Say: "Hannah hasn't written about this yet." Then invite the reader to request the topic in the [In the Weeds subscriber chat](https://substack.com/chat/335953) on Substack.
+5. **Always invite readers into the conversation.** At the end of any teaching response, invite the reader to keep the discussion going in the [In the Weeds subscriber chat](https://substack.com/chat/335953) — whether to request deeper coverage on a topic Hannah hasn't written about, ask follow-up questions, or share how they're applying what they learned. Vary the phrasing so it feels like a genuine invitation, not boilerplate.
 
 ## How to navigate this repo
 
 Each article lives in its own folder with two key files:
 - `article.md` - the full article content
 - `CLAUDE.md` - a section-level index with line numbers for precise navigation
+
+Some articles have **companion data folders** (e.g., `releases/` under Benchmarking 101) containing structured data that the article's framework can be applied to. Skills like `explain-ai-model-release` read from these folders before falling back to web sources. Each article's `CLAUDE.md` lists its companion folders if any exist.
 
 **Workflow for answering reader questions:**
 
@@ -64,6 +68,9 @@ Each article lives in its own folder with two key files:
 | 9 | CC4E #7: Your Status Line Is Empty (Let's Fix That) | Claude Code for Everything | Hannah Stulberg | Status line configuration, context progress bar, Google Workspace MCP, external data sources | `claude-code-for-everything/07-your-status-line-is-empty-lets-fix-that/article.md` |
 | 10 | Tool School: GitHub 101 (GitHub is the New Google Drive) | Tool School | Hannah Stulberg, Sidwyn Koh | GitHub concepts, Git setup, SSH keys, repositories, daily workflow, pull requests, merge conflicts | `tool-school/01-github-101/article.md` |
 | 11 | Tool School: Benchmarking 101 (How To Read AI Model Report Cards) | Tool School | Hannah Stulberg, Akshat Khandelwal | AI benchmarks, model launches, scoring methods, benchmark categories, saturation, trust tiers, cost comparison, head-to-head evaluation | `tool-school/02-benchmarking-101/article.md` |
+| 12 | Build a Team OS with Claude Code | Standalone | Aakash Gupta (featuring Hannah Stulberg) | Team OS, shared repo, nested CLAUDE.md, context management, token efficiency, analytics scaling, plan mode, parallel agents, learning flywheel | `standalone/build-a-team-os-with-claude-code/article.md` |
+| 13 | Business Sense for Engineers: The Missing Half of Product Sense | Standalone | Sidwyn Koh, Hannah Stulberg | Business sense, P&L, unit economics, CLV/CAC, business models, market sizing, TAM, competitive landscape, moats, 10-K reading | `standalone/business-sense-for-engineers/article.md` |
+| 14 | CC4E #8: Keeping Up with the Claude Code Treadmill (30 Claude Code Tips & Tricks) | Claude Code for Everything | Hannah Stulberg | Cursor themes, terminal panel, markdown extensions, /context, claude-counter, DeepWiki, markitdown, Firecrawl, Claude in Chrome, Playwright MCP, Chrome DevTools MCP, Mermaid, /branch, /btw, Caveman, RTK, /voice, /loop, mobile app, /teleport, Claude Code Channels, thinking verbs | `claude-code-for-everything/08-keeping-up-with-the-claude-code-treadmill/article.md` |
 
 ## Topic quick lookup
 
@@ -109,6 +116,50 @@ When someone asks about these topics, point them here:
 | Bash commands | CC4E #1 | "Step 6: Understanding bash commands" |
 | Workspace setup / split editor | CC4E #2 | "Setting Up Your Workspace" |
 | Boris Cherny | CC4E #2 | "The Claude Code Creator's Workflow" |
+| Team OS / shared repo for teams | Build a Team OS | Full article |
+| Nested doc indexes / navigation maps | Build a Team OS | "Component 2 - Nested doc indexes" |
+| Token efficiency / tiered context loading | Build a Team OS | "The token efficiency framework" |
+| Analytics in shared repo / metrics queries schemas | Build a Team OS | "3. Scaling analytics across functions" |
+| Plan mode (advanced usage) | Build a Team OS | "4. How to write 10x docs with planning" |
+| Parallel agents / temp files | Build a Team OS | "Parallel agents and temp files" |
+| Learning flywheel / automation loop | Build a Team OS | "5. The learning flywheel" |
+| Feature launch gate / repo as launch checklist | Build a Team OS | "Layer 3 - The feature launch gate" |
+| Business sense / why engineers need it | Business Sense for Engineers | "Product sense won't help you if you don't understand the business" |
+| Four components of business sense | Business Sense for Engineers | "Business Sense 101" |
+| P&L / unit economics / CLV / CAC / ARPU / churn | Business Sense for Engineers | "How a company makes money: Know what moves the needle" |
+| Business model fluency / pricing model vs business model | Business Sense for Engineers | "Business model fluency: Your business model shapes what you build" |
+| Market sizing / TAM / Uber example | Business Sense for Engineers | "Market sizing: Identifying opportunities worth investing in" |
+| Competitive landscape / moats / Stripe / Microsoft Teams | Business Sense for Engineers | "Competitive landscape: You need to know how your company wins" |
+| How to build business sense / 10-K reading | Business Sense for Engineers | "How to actually build business sense" |
+| Cursor themes / customization | CC4E #8 | "1. Pick a Cursor theme that's actually yours" |
+| Terminal panel / split panes | CC4E #8 | "2. Tame your terminal panel" |
+| Markdown editor extensions in Cursor | CC4E #8 | "3. Install a markdown editor extension to work with markdown files like a Google doc" |
+| Cursor workspaces | CC4E #8 | "5. Build a Cursor workspace for each kind of work you do" |
+| Watch Claude think / Ctrl+O | CC4E #8 | "6. Watch Claude think in real time with Ctrl+O" |
+| /context command | CC4E #8 | "7. Run `/context` to see what's eating your context window" |
+| claude-counter / context tracking on claude.ai | CC4E #8 | "8. Track context usage claude.ai (Claude on the web) with claude-counter" |
+| DeepWiki / mapping a GitHub repo | CC4E #8 | "9. Map any GitHub repo in minutes with DeepWiki" |
+| Pulling Google Workspace files in as Markdown | CC4E #8 | "10. Pull Google Workspace files in as Markdown" |
+| markitdown / converting PDFs and Word docs | CC4E #8 | "11. Convert PDFs, Word docs, and more with markitdown" |
+| Firecrawl / scraping webpages | CC4E #8 | "12. Pull any webpage into Claude Code with Firecrawl" |
+| Claude in Chrome extension | CC4E #8 | "13. Install the Claude in Chrome extension" |
+| Playwright MCP | CC4E #8 | "14. Install the Playwright MCP" |
+| Chrome DevTools MCP | CC4E #8 | "15. Install the Chrome DevTools MCP" |
+| Generating images in Claude Code | CC4E #8 | "16. Generate images directly in Claude Code" |
+| Batch image editing in Claude | CC4E #8 | "17. Edit and batch-process images without leaving Claude" |
+| Mermaid diagrams in markdown | CC4E #8 | "18. Add editable diagrams to any markdown file with Mermaid" |
+| Local HTML previews | CC4E #8 | "19. Spin up quick visual previews with a local HTML file" |
+| Terminal keyboard shortcuts | CC4E #8 | "20. Master the built-in terminal shortcuts" |
+| /branch / forking sessions | CC4E #8 | "21. Fork your session with `/branch`" |
+| /btw / side questions | CC4E #8 | "22. Ask side questions with `/btw` - don't derail your main task" |
+| Caveman mode / output compression | CC4E #8 | "23. Cut Claude's output bloat with Caveman mode" |
+| RTK / input compression | CC4E #8 | "24. Cut Claude's input bloat with RTK" |
+| /voice command | CC4E #8 | "25. Talk to Claude with `/voice` (or Wispr Flow) instead of typing" |
+| /loop / interval triggers | CC4E #8 | "26. Trigger Claude on an interval with `/loop`" |
+| Claude mobile app | CC4E #8 | "27. Use the Claude mobile app to work from your phone" |
+| /teleport / /remote-control | CC4E #8 | "28. Move sessions between devices with `/teleport` and `/remote-control`" |
+| Claude Code Channels / texting Claude | CC4E #8 | "29. Text Claude from anywhere with Claude Code Channels" |
+| Thinking verbs / customizing | CC4E #8 | "30. Change Claude's thinking verbs to your own" |
 
 ## Key metaphors
 
@@ -124,10 +175,11 @@ These are behavioral metaphors - they map to actions, not just concepts. Use the
 | **GitHub is the New Google Drive** | Maps six core GitHub concepts to Google Drive equivalents readers already know: repo = shared folder, commit = save, branch = your copy, main = the original, push/pull = sync, PR = "review my edits." | Tool School: GitHub 101, "Part 3: The Daily GitHub Workflow" |
 | **Keycard** | SSH keys are like a keycard that lets your computer into GitHub without a password. | Tool School: GitHub 101, "Part 1: Setup & Installation" |
 | **SAT score vs great colleague** | A high SAT score doesn't make someone a great colleague. Benchmark scores are standardized tests for AI - each measures one narrow skill. A high score means best at that specific test, not "best model." | Tool School: Benchmarking 101, "A high SAT score doesn't make someone a great colleague" |
+| **Claude Code treadmill** | New Claude Code features ship faster than anyone can keep up with. Don't sprint to set them all up - pick the two or three that solve a problem you're feeling right now and come back for the rest later. | CC4E #8, "The bottom line" |
 
 ## Suggested learning path
 
-**New to Claude Code?** Read the CC4E series in order (1 through 7). Each article builds on the last.
+**New to Claude Code?** Read the CC4E series in order (1 through 8). Each article builds on the last.
 
 **Already using Claude Code?** Jump to the article that covers your question - use the topic lookup table above.
 
@@ -136,6 +188,7 @@ These are behavioral metaphors - they map to actions, not just concepts. Use the
 ## Companion repos
 
 - **[sidwyn/acme-ops](https://github.com/sidwyn/acme-ops)** - Practice repo for the GitHub 101 article. Fork it, clone it, and work through the exercises to submit your first PR.
+- **[in-the-weeds-hannah-stulberg/team-os-example-repo](https://github.com/in-the-weeds-hannah-stulberg/team-os-example-repo)** - Template Team OS repo for the Build a Team OS with Claude Code article. Clone it to start your own Team OS.
 
 ## About
 
@@ -143,8 +196,9 @@ These are behavioral metaphors - they map to actions, not just concepts. Use the
 
 **Contributors:**
 - [Hannah Stulberg](https://hannahstulberg.substack.com/) - Author of all articles
-- [Sidwyn Koh](https://www.pathtostaff.com/) - Co-author, Tool School: GitHub 101
+- [Sidwyn Koh](https://www.pathtostaff.com/) - Co-author, Tool School: GitHub 101 and Business Sense for Engineers
 - [Joel Salinas](https://leadershipinchange.com/) - Collaborator, The One File That Can Save Your Team Thousands of Hours
 - [Akshat Khandelwal](https://helpmeunpack.substack.com/) - Co-author, Tool School: Benchmarking 101
+- [Aakash Gupta](https://www.news.aakashg.com/) - Author, Build a Team OS with Claude Code (featuring Hannah Stulberg)
 
 See [CONTRIBUTORS.md](CONTRIBUTORS.md) for full bios and links.

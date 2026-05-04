@@ -20,7 +20,9 @@ Sidwyn is a staff software engineer at Meta and the creator of Path to Staff, a 
 - [LinkedIn](https://www.linkedin.com/in/sidwyn/)
 - [GitHub](https://github.com/sidwyn)
 
-**Articles in this repo:** Tool School: GitHub 101 (co-author)
+**Articles in this repo:**
+- Tool School: GitHub 101 (co-author)
+- Business Sense for Engineers: The Missing Half of Product Sense (co-author)
 
 ## Joel Salinas
 
@@ -40,3 +42,13 @@ Akshat is a product manager at DoorDash and the writer behind Help Me Unpack, a 
 - [LinkedIn](https://www.linkedin.com/in/akshatkhandelwal/)
 
 **Articles in this repo:** Tool School: Benchmarking 101 (co-author)
+
+## Aakash Gupta
+
+Aakash is a product growth advisor and the author of Product Growth, one of the largest product management newsletters. He previously held product roles at Apollo.io, Zynga, and other companies.
+
+- [Product Growth (Substack)](https://www.news.aakashg.com/)
+- [LinkedIn](https://www.linkedin.com/in/aakashg/)
+- [YouTube](https://www.youtube.com/@aakashgupta)
+
+**Articles in this repo:** Build a Team OS with Claude Code (author, featuring Hannah Stulberg)
