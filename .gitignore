@@ -1,4 +1,8 @@
 .DS_Store
+.env
+.env.*
+!.env.example
+!.env.sample
 *.tmp
 .firecrawl/
 .claude/skills/explain-ai-model-release/
